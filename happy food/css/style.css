@@ -1,0 +1,450 @@
+:root {
+    --fuente1: 'Nunito', sans-serif;
+    --fuente2: 'Raleway', sans-serif;
+    --color1: rgba(219, 189, 164, 0.801);
+    --color2: #000;
+    --color3: rgba(219, 194, 164, 0.855);
+    --color4: #f2d9cec7;
+    --color5: rgba(216, 238, 242, 0.473);
+    --color5: #d8eef2;
+    --color6: rgba(216, 242, 235, 0.767);
+    --color7: rgb(84, 59, 36);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente2);
+}
+body {
+    overflow-x: hidden;
+}
+.background {
+    background-image: url(img/food-photographer-jennifer-pallian-OfdDiqx8Cz8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav {
+    background-repeat: no-repeat;
+    background-color: var(--color1);
+    height: 52rem;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav__logo, .contact__logo {
+    width: 15rem;
+    padding-top: .5rem;
+}
+.nav__line--mb {
+    width: 10rem;
+    height: .2rem;
+    background-color: var(--color2);
+    border-radius: 10px;
+    margin-top: .5rem;
+}
+.nav__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:#000;
+    font-weight: 500;
+    margin-top: .5rem;
+    padding: 1rem;
+    transition: .2s;
+}
+
+.nav__link--margin {
+    margin-top: 2rem;
+}
+
+.nav__link:hover {
+    background-color: #0000003a;
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+.presentation {
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(219,194,164,1) 0%, rgba(216,238,242,1) 100%);
+    height: 100%;
+}
+
+.presentation__box {
+    text-align: center;
+    background-color:var(--color3);
+    margin: 1rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 10px 50px -20px #000;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    transition: .15s;
+    
+}
+.main__product-1:hover, .main__product-2:hover, .main__product-3:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 50px -30px #000;
+}
+
+.presentation__title {
+    font-family: var(--fuente1);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.presentation__paragraph {
+    font-family: var(--fuente1);
+    padding: 1rem;
+    font-size: 1rem;
+}
+.presentation__img {
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    margin: 0;
+    padding: 0;
+    border-radius:10px;
+}
+.presentation__img-1 {
+    background-image: url('./img/sincerely-media-VNsdEl1gORk-unsplash.jpg');
+}
+.presentation__img-2 {
+    background-image: url('./img/kim-daniels-OrkEasJeY74-unsplash.jpg');
+
+}
+.presentation__img-3 {
+    background-image: url('./img/leigh-skomal-kn1YORBo2DY-unsplash.jpg');
+
+}
+.presentation__img-4 {
+    background-image: url('./img/monika-grabkowska-neu4T59mTcY-unsplash.jpg');
+
+}
+.main {
+    background-color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1800px;
+    gap:2rem;
+}
+.main__title {
+    padding: 2rem;
+    font-family: var(--fuente1);
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.main__product-1, .main__product-2, .main__product-3 {
+    margin-top: 2rem;
+    width: 300px;
+    height: 520px;
+    border-radius: 20px;
+    background-color: var(--color6);
+    box-shadow: 0 5px 50px -20px #000;
+    border-radius: 20px;
+    overflow-x: hidden;
+    transition: .2s;
+}
+
+.main__name {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--fuente1);
+    font-weight: 800;
+    padding-top: 1rem;
+}
+.main__description {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.main__product-container {
+    margin-top: 2rem;
+    width: fit-content;
+    height: 40rem;
+}
+.main__product-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20rem;
+}
+.main__product-1-img{
+    height: 200px;
+    background-image: url(img/donas-de-manzana-integrales.jpg);
+}
+.main__product-2-img{
+    background-image: url(img/la-cuchara-azul-calabaza-halloween-pizza-2.jpg);
+    height: 220px;
+}
+.main__product-3-img {
+    background-image: url(img/spaghetti-pancake-plated.png);
+    height: 200px;
+}
+
+.contact__grid {
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns:  2rem 5rem;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: fit-content;
+    row-gap: 1rem;
+}
+.contact__title {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: var(--fuente1);
+}
+.contact__a {
+    text-decoration: none;
+    color:var(--color2);
+    transition: .1s;
+}
+.contact__a:hover {
+    font-weight: 800;
+}
+.contact__info {
+    margin-top:1rem;
+    display: grid;
+    grid-template-rows: repeat(4,2rem);
+    text-align: center;
+    row-gap: 1rem;
+}
+.contact__container {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+.contact__logo {
+    width: 10rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .presentation {
+        padding: 3rem 0;
+        height: fit-content;
+    }
+    .presentation__container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        height: fit-content;
+    }
+    .presentation__box--0 {
+        grid: 1/1;
+    }
+    .presentacion__box--1 {
+        grid: 1/2;
+    }
+    .presentacion__box--2 {
+        grid: 2/-3;
+    }
+    .presentacion__box--3 {
+        grid: -2/2;
+    }
+    .presentation__paragraph {
+        font-size: 1.2rem;
+    }
+    .presentation__title {
+        font-size: 1.6rem;
+    }
+    .main {
+        padding-top: 2rem;
+    }
+    .contact__grid {
+        height: 250px;
+        font-size: 1rem;
+        font-size: 1.1rem;
+        grid-template-columns:  2rem 6rem;
+    }
+    .contact__info {
+        font-size: 1.1rem;
+    }
+}
+
+@media(min-width:1024px) {
+
+    .presentation__container {
+        display: grid;
+        grid-template-rows: repeat(4, fit-content);
+        grid-template-columns: none;
+    }
+    .presentation__texts-1, .presentation__texts-2 {
+        grid-area: 1/2;
+    }
+    .presentation__box {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: none;
+        gap: 2rem;
+        padding: 2rem;
+
+    }
+    .presentation__title {
+        font-size: 2rem;
+    }
+    .presentation__paragraph{
+        font-size: 1.4rem;
+    }
+    
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+    }
+    .nav__line {
+        width: .2rem;
+        height: 3rem;
+        background-color: var(--color2);
+        border-radius: 10px;
+    }
+    .nav__link {
+        width: 130px;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .nav__logo {
+        width: 120px;
+        padding: 0;
+    }
+    .nav__link--margin {
+        margin:0;
+    }
+    .main {
+        padding: 2rem 5rem;
+        gap:5rem;
+    }
+    .main__title {
+        font-size: 2.8rem;
+    }
+    .main__product-1, .main__product-2, .main__product-3 {
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    .main__product-img {
+        background-size: 400px;
+    }
+    .main__name {
+        font-size: 2rem;
+    }
+    .main__description {
+        font-size: 1.3rem;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: none;
+    }
+    .contact__grid {
+        font-size: 1.7rem;
+        grid-template-columns:  2rem 9rem;
+    }
+    .contact__info {
+        margin-top: 2rem;
+        font-size: 1.7rem;
+        grid-template-rows: repeat(4,3rem);
+    }
+    .contact__logo {
+        width: 15rem;
+        padding-top: 2rem;
+    }
+}  
+
+@media(min-width:1440px) {
+    .main {
+        height: 800px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: none;
+        padding: 2rem;
+        gap:5rem;
+    }
+    .nav {
+        justify-content: space-evenly;
+    }
+    .nav__link {
+        width: 210px;
+        text-align: center;
+    }
+    .presentation__box {
+        width: 80vw;
+    }
+    .presentation__title {
+        font-size: 2.5rem;
+    }
+    .presentation__paragraph {
+        font-size: 2rem;
+    }
+
+}
+
+@media(min-width:1600px) {
+
+    .main {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        height: fit-content;
+        padding:5rem;
+    }
+
+    .nav__link {
+        width: 250px;
+    }
+    .main__product-1, .main__product-2, .main__product-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 40vw;
+        
+    }
+    .main__product-img {
+        background-size: cover;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+    .main__product-texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+
+@media(min-width:2560px) {
+    .nav__link {
+        font-size: 2rem;
+        width: 280px;
+    }
+    .main__product-1-name, .main__product-2-name {
+        font-size: 3rem;
+    }
+    .main__product-2-name {
+        padding-bottom: 2rem;
+    }
+    .main__product-1-description, .main__product-2-description {
+        font-size: 1.8rem;
+    }
+    .contact__info, .contact__a {
+        font-size: 2rem;
+    }
+}

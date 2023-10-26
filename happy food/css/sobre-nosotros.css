@@ -1,0 +1,139 @@
+:root {
+    --fuente1: 'Nunito', sans-serif;
+    --fuente2: 'Raleway', sans-serif;
+    --color1: #dbbda4;
+    --color9: #0000002f;
+}
+
+* {
+    font-family: var(--fuente1);
+}
+
+.mainS {
+    background-color:  #dbbda4;
+}
+
+.mainS__grid {
+    display: grid;
+    justify-content: center;
+    gap:2rem;
+    padding: 5rem 0;
+}
+.mainS__title {
+    font-weight: 900;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.mainS__container {
+    width: 300px;
+    height: max-content;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--color9);
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(2, 1fr);
+    transition: .2s;
+    box-shadow: 0 20px 60px -40px;
+}
+.mainS__container:hover {
+    transform: scale(1.08);
+}
+.mainS__container-img {
+    margin-top: 1rem;
+    grid-row: 1/2;
+}
+.mainS__img-1 {
+    background-image: url(./img/redd-f-5U_28ojjgms-unsplash.jpg);
+}
+.mainS__img-2 {
+    background-image: url(./img/joshua-earle-ICE__bo2Vws-unsplash.jpg);
+}
+.mainS__img-3 {
+    background-image: url(./img/austin-distel-wD1LRb9OeEo-unsplash.jpg);
+}
+.mainS__img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+@media(min-width:768px) {
+    .mainS__sub {
+        font-size: 1.6rem;
+    }
+    .mainS__paragraph {
+        font-size: 1.1rem;
+    }
+    .mainS__container {
+        width: 100%;
+        padding: 2rem;
+    }
+    .mainS__grid {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .mainS__text {
+        padding-bottom: 1rem;
+    }
+}
+
+@media(min-width:1024px) {
+    .mainS__grid {
+        width: fit-content;
+        margin: 2rem;
+    }
+    .mainS__title {
+        font-size: 2.8rem;
+    }
+    .mainS__sub {
+        font-size: 1.8rem;
+    }
+    .mainS__paragraph {
+        font-size: 1.3rem;
+    }
+    .mainS__container {
+        grid-template-rows: none;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width:1440px) {
+    .mainS__grid {
+        margin: 0 auto;
+    }
+    .mainS__sub {
+        font-size: 1.7rem;
+    }
+    .mainS__paragraph {
+        font-size: 1.2rem;
+    }
+    .mainS__container {
+        width: 60vw;
+    }
+}
+
+@media(min-width:1600px) {
+
+    .mainS__grid {
+        width: 70vw;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:2000px) {
+    .nav__link {
+        font-size: 1.4rem;
+    }
+    .mainS__title {
+        font-size: 2.8rem;
+    }
+    .mainS__sub {
+        font-size: 2.4rem;
+    }
+    .mainS__paragraph {
+        font-size: 1.7rem;
+    }
+}

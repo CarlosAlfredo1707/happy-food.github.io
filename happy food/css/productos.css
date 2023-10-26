@@ -1,0 +1,43 @@
+* {
+    font-family: var(--fuente1);
+}
+.nav {
+    background-color: var(--color5);
+}
+
+.main__product-a {
+    text-decoration: none;
+    color: var(--color2);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.main__c {
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+.main__1 {
+    background-image: url(img/matheus-cenali-wXuzS9xR49M-unsplash.jpg);
+}
+.main__2 {
+    background-image: url(img/shaian-ramesht-exSEmuA7R7k-unsplash\ \(1\).jpg);
+}
+.main__3 {
+    background-image: url(img/matthias-reumann-V8l1XQVeiU8-unsplash.jpg);
+}
+
+.main {
+    height: fit-content;
+}
+
+@media(min-width:1440px) {
+    .main {
+        grid-template-columns: none;
+    }
+}
